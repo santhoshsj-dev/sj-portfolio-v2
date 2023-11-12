@@ -89,25 +89,6 @@ function App() {
           <span id="text1" ref={elts.text1}></span>
           <span id="text2" ref={elts.text2}></span>
         </h2>
-        <svg
-          id="filters"
-          width="100%"
-          height="20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <defs>
-            <filter id="threshold">
-              <feColorMatrix
-                in="SourceGraphic"
-                type="matrix"
-                values="1 0 0 0 0
-          0 1 0 0 0
-          0 0 1 0 0
-          0 0 0 255 -140"
-              />
-            </filter>
-          </defs>
-        </svg>
 
         <p>
           Hi, I am Santhosh, Experienced full-stack developer from India, with 2
