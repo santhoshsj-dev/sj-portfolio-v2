@@ -1,0 +1,129 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #0b0b0b;
+  color: #e2e8f0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  width: 40%;
+}
+
+.container h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.container .position {
+  position: absolute;
+  margin: auto;
+  width: 70%;
+  height: 100pt;
+  top: 0;
+  bottom: 0;
+  filter: url(#threshold) blur(0.6px);
+}
+
+#text1,
+#text2 {
+  position: absolute;
+  display: inline-block;
+  user-select: none;
+  font-size: 2rem;
+  font-weight: 700;
+  background: -webkit-linear-gradient(0deg, #c084fc 0%, #db2777 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container p {
+  color: #9ca3af;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.container a {
+  color: #dbe8f0;
+  text-decoration: none;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+/* Extra Small Devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .container .position {
+    width: 90%;
+    height: 100pt;
+    top: 0;
+    bottom: 0;
+    filter: url(#threshold) blur(0.6px);
+  }
+
+  .container p {
+    margin-top: 20px;
+  }
+
+  .container a {
+    color: #dbe8f0;
+    text-decoration: none;
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Devices (portrait tablets and large phones, 601px to 768px) */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+/* Medium Devices (landscape tablets, 769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    width: 60%;
+  }
+}
+
+/* Large Devices (desktops, 1025px to 1200px) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+  .container {
+    width: 30%;
+  }
+}
+
+/* Extra Large Devices (large desktops, 1201px and up) */
+@media only screen and (min-width: 1201px) {
+  .container {
+    width: 40%;
+  }
+
+  .container p{
+    margin-top: 40px;
+  }
+
+  .container .position {
+    width: 50%;
+  }
+}
